@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kashirin.PageAddEmployees"
+             Title="PageAddEmployees">
+    <StackLayout Margin="10,0,0,0" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout Orientation="Horizontal" Margin="10">
+            <Label Text="Имя" BackgroundColor="Black" WidthRequest="140" VerticalTextAlignment="Center" Margin="0,0,10,0"/>
+            <Entry Text="{Binding Name}" WidthRequest="250" HorizontalOptions="Start"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10">
+            <Label Text="Фамилия" BackgroundColor="Black" WidthRequest="140" VerticalTextAlignment="Center" Margin="0,0,10,0"/>
+            <Entry Text="{Binding Surname}" WidthRequest="250" HorizontalOptions="Start"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10">
+            <Label Text="Дата рождения" BackgroundColor="Black" WidthRequest="140" VerticalTextAlignment="Center" Margin="0,0,10,0"/>
+            <Entry Text="{Binding DateOfBirthday}" WidthRequest="250" HorizontalOptions="Start"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10">
+            <Label Text="Телефон" BackgroundColor="Black" WidthRequest="140" VerticalTextAlignment="Center" Margin="0,0,10,0"/>
+            <Entry Text="{Binding Address}" WidthRequest="250" HorizontalOptions="Start"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10">
+            <Label Text="Адрес" BackgroundColor="Black" WidthRequest="140" VerticalTextAlignment="Center" Margin="0,0,10,0"/>
+            <Entry Text="{Binding Phone}" WidthRequest="250" HorizontalOptions="Start"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,30,0,0">
+            <Button Text="Сохранить" Clicked="AddEmployee" WidthRequest="130" Margin="0,0,10,0"/>
+            <Button Text="Удалить" Clicked="DeleteEmployee" WidthRequest="130" Margin="0,0,10,0"/>
+            <Button Text="Отмена" Clicked="Cancel" WidthRequest="130" Margin="0,0,10,0"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
